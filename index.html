@@ -37,6 +37,16 @@
 
 <section>
   <div class="wrap">
+    <h2 class="section-title">About Content_thanh</h2>
+    <p class="section-sub">Who this is for and who built it.</p>
+    <div class="card">
+      <p style="margin:0;color:#3a3145;font-size:15px;">Content_thanh is a small personal utility built and maintained by an individual developer (Nguyễn Vũ Trường) for managing my own TikTok posting workflow. It is not a public SaaS product, and it is not offered as a service to third parties &mdash; it connects to a single TikTok account that I own and authorize myself through TikTok's official Login Kit. If you have any questions about how it works or how your data is handled, reach out any time at <a href="mailto:nvtthanh11@gmail.com">nvtthanh11@gmail.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
     <h2 class="section-title">What Content_thanh does</h2>
     <p class="section-sub">A lightweight companion tool for a single creator's own posting workflow &mdash; not a public app or marketplace.</p>
     <div class="grid-2">
@@ -60,7 +70,7 @@
   </div>
 </section>
 
-<section class="alt">
+<section>
   <div class="wrap">
     <h2 class="section-title">How it works</h2>
     <p class="section-sub">End-to-end flow using TikTok for Developers' Login Kit and Content Posting API.</p>
@@ -84,7 +94,7 @@
   </div>
 </section>
 
-<section>
+<section class="alt">
   <div class="wrap">
     <h2 class="section-title">Permissions Content_thanh requests</h2>
     <p class="section-sub">Only the scopes required for the flow above &mdash; nothing more.</p>
@@ -101,6 +111,45 @@
         <div>
           <strong>Upload video as draft</strong>
           <p>Uploads a selected video to the creator's TikTok account as a draft, for the creator to edit and publish themselves inside TikTok.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Frequently asked questions</h2>
+    <p class="section-sub">Common questions about how Content_thanh works and how your data is handled.</p>
+    <div class="scope-list">
+      <div class="scope-item">
+        <div>
+          <strong>Why does Content_thanh need TikTok login access?</strong>
+          <p>Content_thanh uses TikTok's official Login Kit (<code>user.info.basic</code>) only to confirm which TikTok account is currently connected, so the right account's display name and avatar show inside the App before you upload anything.</p>
+        </div>
+      </div>
+      <div class="scope-item">
+        <div>
+          <strong>Why does Content_thanh need the video.upload scope?</strong>
+          <p>This is the only way to send a video from the App to your TikTok account through TikTok's Content Posting API. The video is uploaded as a draft &mdash; TikTok requires you to open the TikTok app and manually review and publish it yourself; Content_thanh cannot publish on your behalf.</p>
+        </div>
+      </div>
+      <div class="scope-item">
+        <div>
+          <strong>Is my video content or account data shared with anyone else?</strong>
+          <p>No. Data is only exchanged directly with TikTok's official APIs to perform the upload you request. Content_thanh does not sell, share, or use your data for advertising. See the <a href="privacy.html">Privacy Policy</a> for full details.</p>
+        </div>
+      </div>
+      <div class="scope-item">
+        <div>
+          <strong>Can I revoke access at any time?</strong>
+          <p>Yes. You can disconnect Content_thanh from your TikTok account at any time from your TikTok account settings, which immediately revokes all access.</p>
+        </div>
+      </div>
+      <div class="scope-item">
+        <div>
+          <strong>Is Content_thanh a public product other people can sign up for?</strong>
+          <p>No. Content_thanh is a personal utility built for a single developer's own TikTok posting workflow, not a commercial service offered to the public.</p>
         </div>
       </div>
     </div>
