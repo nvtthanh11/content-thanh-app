@@ -2,14 +2,131 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Content Thanh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content_thanh &mdash; Automatic TikTok Video Posting Tool</title>
+<meta name="description" content="Content_thanh helps creators manage and automatically post video content to their own TikTok account through TikTok's official Login Kit and Content Posting API.">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Content Thanh</h1>
-<p>Content Thanh is an application that helps manage and automatically post video content to your TikTok account.</p>
-<ul>
-<li><a href="terms.html">Terms of Service</a></li>
-<li><a href="privacy.html">Privacy Policy</a></li>
-</ul>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="icon-64.png" alt="Content_thanh app icon">
+      <span>Content_thanh</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <img class="icon-badge" src="icon-192.png" alt="Content_thanh">
+    <h1>Content_thanh</h1>
+    <p class="lead">Content_thanh is a personal utility that helps a TikTok creator manage their own video library and upload content to their TikTok account through TikTok's official Login Kit and Content Posting API, so it's ready to review and publish from the TikTok app.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">What Content_thanh does</h2>
+    <p class="section-sub">A lightweight companion tool for a single creator's own posting workflow &mdash; not a public app or marketplace.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Organize videos in one place</h3>
+        <p>Keeps a queue of the video files a creator wants to publish, so they don't have to dig through folders when it's time to post.</p>
+      </div>
+      <div class="card">
+        <h3>Upload to TikTok as drafts</h3>
+        <p>Sends selected videos to the creator's own authorized TikTok account as drafts via the Content Posting API, ready for a final review before they go live.</p>
+      </div>
+      <div class="card">
+        <h3>Secure TikTok sign-in</h3>
+        <p>Uses TikTok's official Login Kit for authentication &mdash; Content_thanh never sees or stores the creator's TikTok password.</p>
+      </div>
+      <div class="card">
+        <h3>Basic profile display</h3>
+        <p>Shows the connected creator's display name and avatar inside the app so they can confirm they're posting from the right account.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">End-to-end flow using TikTok for Developers' Login Kit and Content Posting API.</p>
+    <div class="grid-3">
+      <div class="card">
+        <span class="num">1</span>
+        <h3>Connect your TikTok account</h3>
+        <p>The creator signs in with TikTok Login Kit and authorizes Content_thanh to access basic profile info.</p>
+      </div>
+      <div class="card">
+        <span class="num">2</span>
+        <h3>Pick a video to publish</h3>
+        <p>The creator selects a video file from their own library inside Content_thanh.</p>
+      </div>
+      <div class="card">
+        <span class="num">3</span>
+        <h3>Upload as a draft</h3>
+        <p>Content_thanh calls the Content Posting API to upload the video to TikTok as a draft, which the creator then reviews and posts from the TikTok app.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Permissions Content_thanh requests</h2>
+    <p class="section-sub">Only the scopes required for the flow above &mdash; nothing more.</p>
+    <div class="scope-list">
+      <div class="scope-item">
+        <code>user.info.basic</code>
+        <div>
+          <strong>Basic profile information</strong>
+          <p>Reads the connected creator's open ID, display name, and avatar so Content_thanh can confirm which account is signed in.</p>
+        </div>
+      </div>
+      <div class="scope-item">
+        <code>video.upload</code>
+        <div>
+          <strong>Upload video as draft</strong>
+          <p>Uploads a selected video to the creator's TikTok account as a draft, for the creator to edit and publish themselves inside TikTok.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="cta">
+      <h2>Questions about Content_thanh?</h2>
+      <p>Reach out any time &mdash; we're happy to walk through how the integration works.</p>
+      <a class="btn" href="mailto:nvtthanh11@gmail.com">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Content_thanh. All rights reserved.</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:nvtthanh11@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
